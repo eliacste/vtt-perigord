@@ -1,0 +1,150 @@
+/* eliaaa-webdev */
+
+/* EB Garamond - fonts.google.com
+ * by Georg Duffner and Octavio Pardo
+*/
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,800&display=swap');
+
+.hero p{
+    margin-bottom: 0;
+}
+
+.banner{
+    margin-top: -45px;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../img/StAmand-Vie-Asso-2.jpg");
+    transform: translate3d(0px, 44.5px, 0px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;
+}
+
+.banner h1{
+    font-size: 73px !important;
+}
+
+.hero img{
+    max-width: 50%;
+    height: auto;
+}
+
+#index .mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#index .mid div{
+    gap: 200px;
+}
+
+#partners .row a{
+    height: 300px;
+    border: 5px solid #fff;
+    transition: all 0.4s ease;
+}
+
+#partners .row a:hover{
+    transform: scale(0.8); 
+}
+
+#rent .rent-item{
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+#rent .d-flex .rent-item{
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#rent .rent-item img{
+    height: 100%;
+    width: 100%;
+}
+
+#rent .d-flex .rent-item img{
+    width: 100%;
+}
+
+#bike-cafe .img-container{
+    max-width: 100%;
+}
+
+#contact .contact-img{
+    height: 500px;
+    width: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../img/contact-img.png");
+    transform: translate3d(0px, 44.5px, 0px);
+}
+
+/* responsive */
+
+@media screen and (max-width:996px){
+    .hero{
+        flex-direction: column;
+        width: 100%;
+    }
+    .hero .hero-text, .hero img{
+        min-width: 100% !important;
+    }
+}
+
+@media screen and (max-width:926px){
+    .banner{
+        width: 100%;
+        text-align: center;
+    }
+    #index .mid div{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:999px){
+    #contact .mid{
+        flex-direction: column-reverse !important;
+    }
+    #contact .mid img.img-fluid{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:851px){
+    iframe{
+        width: 100%;
+    }
+    #rent .rent-item, #rent .d-flex.align-items-center.justify-content-around{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:594px){
+    #bike-cafe .img-container{
+        flex-direction: column;
+    }
+    #bike-cafe .img-container img{
+        width: 100% !important;
+    }
+    #contact .mid, #booking .mid, #workshop .container.hero{
+        text-align: center;
+    } 
+}
+
+@media screen and (max-width:425px){
+    .navbar a.navbar-brand p{
+        font-size: 12px !important;
+    }
+}
